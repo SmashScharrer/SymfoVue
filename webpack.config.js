@@ -14,16 +14,22 @@ Encore
     // only needed for CDN's or sub-directory deploy
     //.setManifestKeyPrefix('build/')
 
+    // Export files from assets directory
+    .copyFiles({
+        from: './assets/img',
+        to: 'assets/img/[path][name].[hash:8].[ext]'
+    })
+
     /*
      * ENTRY CONFIG
      *
      * Each entry will result in one JavaScript file (e.g. app.js)
      * and one CSS file (e.g. app.css) if your JavaScript imports CSS.
      */
-    .addEntry('app', './assets/app.js')
+    .addEntry('app', './assets/js/app.js')
 
-    // Entry HomeSecondPage
-    .addEntry('home_second', './assets/js/home_second.js')
+    // Entry Home
+    .addEntry('home', './assets/js/home.js')
 
     // enables VueJS
     .enableVueLoader()

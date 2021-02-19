@@ -629,4 +629,8 @@ MigrationBackup/
 .ionide/
 ###< VisualStudio ###
 
+###> Personnal ignore ###
+migrations
+###< Personnal ignore ###
+
 # End of https://www.toptal.com/developers/gitignore/api/jetbrains,jetbrains+iml,jetbrains+all,visualstudiocode,visualstudio,yarn
